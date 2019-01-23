@@ -1,0 +1,3 @@
+qt4w
+qt4a
+qt4i; sys_platform == 'darwin'
