@@ -10,4 +10,4 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 PROJECT_MODE = "standard"
 INSTALLED_APPS = []
 
-QT4W_PLATFORM = 'Android'
+QT4W_PLATFORM = 'Windows' # Windows/Android/iOS

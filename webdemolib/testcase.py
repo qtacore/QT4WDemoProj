@@ -11,7 +11,11 @@ if settings.QT4W_PLATFORM == 'Android':
 elif settings.QT4W_PLATFORM == 'iOS':
     from .ios import iOSWebTestBase
     WebTestBase = iOSWebTestBase
-    
+elif settings.QT4W_PLATFORM == 'Windows':
+    from .windows import WindowsWebTestBase
+    WebTestBase = WindowsWebTestBase
+
+
 class WebDemoTestCase(WebTestBase):
     '''Web demo测试用例基类
     '''

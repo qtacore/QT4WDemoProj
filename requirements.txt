@@ -1,3 +1,4 @@
 qt4w
 qt4a
 qt4i; sys_platform == 'darwin'
+-e git+https://github.com/qtacore/qt4c.git#egg=qt4c ; sys_platform == 'win32'
