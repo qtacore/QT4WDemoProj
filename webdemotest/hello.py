@@ -20,7 +20,7 @@ class WebDemoTest(WebDemoTestCase):
 
     def run_test(self):
         self.start_step('1. 在浏览器中打开测试页面')
-        browser = Browser("TestBrowser")
+        browser = Browser()
         page = browser.open_url('https://qtacore.github.io/qt4w/demo.html', DemoPage)
         
         self.start_step('2. 设置信息并提交')
