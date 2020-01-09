@@ -14,6 +14,11 @@ elif settings.QT4W_PLATFORM == 'iOS':
 elif settings.QT4W_PLATFORM == 'Windows':
     from .windows import WindowsWebTestBase
     WebTestBase = WindowsWebTestBase
+elif settings.QT4W_PLATFORM == 'Headless':
+    from .headless import WebHeadlessTestBase
+    WebTestBase = WebHeadlessTestBase
+else:
+    raise NotImplementedError(settings.QT4W_PLATFORM)
 
 
 class WebDemoTestCase(WebTestBase):
