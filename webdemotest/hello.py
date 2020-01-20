@@ -32,7 +32,7 @@ class WebDemoTest(WebDemoTestCase):
         time.sleep(2) # 等待页面跳转
         
         self.start_step('3. 检查页面跳转以及内容是否正确')
-        page = ProfilePage(page)
+        page = browser.find_by_url('https://qtacore.github.io/qt4w/welcome.html?name=qta&sex=female&age=20&company=tencent', ProfilePage)
         self.assert_equal('检查页面标题', page.title, '欢迎您：qta女士')
         self.assert_equal('检查用户名', page.control('用户名').inner_text, 'qta')
         self.assert_equal('检查性别', page.control('性别').inner_text, '女')
