@@ -3,13 +3,11 @@
 '''Headless模式测试基类
 '''
 
-import testbase.testcase as tc
+from chrome_headless.testcase import WebHeadlessTestBase
 from qt4w.browser import Browser
 
 
-class WebHeadlessTestBase(tc.TestCase):
+class WebHeadlessTestBase(WebHeadlessTestBase):
     '''无界面Web测试基类
     '''
-
-    def pre_test(self):
-        Browser.register_browser('TestBrowser', 'chrome_headless.browser.ChromeHeadlessBrowser') # 注册Chrome Headless浏览器
+    pass
