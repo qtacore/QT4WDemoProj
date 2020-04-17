@@ -1,5 +1,6 @@
 qt4w
 qt4a
 qt4i; sys_platform == 'darwin'
-chrome-headless-browser; sys_platform == 'linux2'
--e git+https://github.com/qtacore/qt4c.git#egg=qt4c ; sys_platform == 'win32'
+qt4c; sys_platform == 'win32'
+qt4mac; sys_platform == 'darwin'
+chrome-headless-browser

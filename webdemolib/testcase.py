@@ -14,6 +14,9 @@ elif settings.QT4W_PLATFORM == 'iOS':
 elif settings.QT4W_PLATFORM == 'Windows':
     from .windows import WindowsWebTestBase
     WebTestBase = WindowsWebTestBase
+elif settings.QT4W_PLATFORM == 'Mac':
+    from .mac import MacOSWebTestBase
+    WebTestBase = MacOSWebTestBase
 elif settings.QT4W_PLATFORM == 'Headless':
     from .headless import WebHeadlessTestBase
     WebTestBase = WebHeadlessTestBase
