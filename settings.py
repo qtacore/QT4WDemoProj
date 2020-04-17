@@ -10,4 +10,6 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 PROJECT_MODE = "standard"
 INSTALLED_APPS = []
 
-QT4W_PLATFORM = 'Windows' # Windows/Android/iOS
+QT4W_PLATFORM = 'Headless' # Windows/Android/iOS/Mac/Headless
+
+os.environ['QT4W_DEBUG'] = '1'
