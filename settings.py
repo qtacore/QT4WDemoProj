@@ -13,3 +13,7 @@ INSTALLED_APPS = []
 QT4W_PLATFORM = 'Headless' # Windows/Android/iOS/Mac/Headless
 
 os.environ['QT4W_DEBUG'] = '1'
+
+QT4W_HTTP_PROXY = ''
+
+QT4W_HOSTS = r''''''
